@@ -3,6 +3,7 @@ This is a word processing program that's capable of automatically growing with a
 
 ## Files
 RQAI handles the creation and manipulation of several documents. All of these files can be deleted and automatically regenerated in the need of a hard reset with the data. Some of these files are needed to use RQAI to it's fullest ability and others aren't meant to be touched by anyone but the program. An outline of the files is listed below:
+
 '''
 Directory: Categories (hidden)
 +--Sub-file: Category_text_documents (AI only)
