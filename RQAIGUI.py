@@ -1,4 +1,5 @@
 import os
+import platform
 
 # Text length before status is printed
 messageLen = 50
@@ -7,7 +8,12 @@ messageLen = 50
 class RQAIGUI:
     def printHeader():
         print("\033[1;31;40m")
-        os.system("cls")
+
+        if platform.system() == "Windows":
+            os.system('cls')
+        else:
+            os.system('clear')
+
         print(r"    ____  ____   ___    ____")
         print(r"   / __ \/ __ \ /   |  /  _/")
         print(r"  / /_/ / / / // /| |  / /  ")
