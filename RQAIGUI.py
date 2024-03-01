@@ -5,14 +5,21 @@ import platform
 messageLen = 50
 
 
+def get_system(teststr: str = ""):
+    if not teststr == "":
+        return teststr
+    else:
+        return platform.system()
+
+
 class RQAIGUI:
     def printHeader():
         print("\033[1;31;40m")
 
-        if platform.system() == "Windows":
-            os.system('cls')
+        if get_system("Windows"):
+            os.system("cls")
         else:
-            os.system('clear')
+            os.system("clear")
 
         print(r"    ____  ____   ___    ____")
         print(r"   / __ \/ __ \ /   |  /  _/")
