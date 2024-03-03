@@ -16,7 +16,7 @@ class RQAIGUI:
     def printHeader():
         print("\033[1;31;40m")
 
-        if get_system("Windows"):
+        if get_system("Windows") == "Windows":
             os.system("cls")
         else:
             os.system("clear")
